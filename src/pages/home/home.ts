@@ -6,6 +6,8 @@ import { NavController } from 'ionic-angular';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
+//This is the controller
 export class HomePage {
 
 //Declare ngModels in this class to be used in the home.html page
