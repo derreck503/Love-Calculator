@@ -11,21 +11,23 @@
   <ion-list>
     <ion-item>
       <ion-label floating>Name 1</ion-label>
-      <ion-input type="text"></ion-input>
+      <!--This will bound the input to the ngModel name name1 declared in the home.ts-->
+      <ion-input type="text"[(ngModel)]="name1"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Name 2</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text"[(ngModel)]="name2"></ion-input>
     </ion-item>
   </ion-list>
   <!--Display a card component with a header to display names and in the content display the result of the calculations-->
-<ion-card>
+<ion-card text-center>
   <ion-card-header>
-    <!--Replace with user input-->
-    Romeo and Juliet
+    <!--We denote ngModels with double curly braces to display its value
+        The || means if empty display the ??? in its place-->
+    {{name1 || '???'}} and {{name2 || '???'}}
   </ion-card-header>
-  <ion-card-content>
+  <ion-card-content class ="score">
     99%
   </ion-card-content>
 </ion-card>

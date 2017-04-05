@@ -1,3 +1,6 @@
+//page-home is same vaue as selector in home.ts, meaning angular will link it to the component
 page-home {
-
+        .score{
+            font-size: 200%;
+        }
 }
