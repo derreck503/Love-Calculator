@@ -24,11 +24,11 @@
 <ion-card text-center>
   <ion-card-header>
     <!--We denote ngModels with double curly braces to display its value
-        The || means if empty display the ??? in its place-->
+        The || means if name1 is empty then display the ??? in its place-->
     {{name1 || '???'}} and {{name2 || '???'}}
   </ion-card-header>
   <ion-card-content class ="score">
-    99%
+    {{score}}%
   </ion-card-content>
 </ion-card>
 
